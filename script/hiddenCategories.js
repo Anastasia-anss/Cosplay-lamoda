@@ -1,24 +1,22 @@
-document.addEventListener("DOMContentLoaded", ready);
+$(document).ready(ready);
 
 function ready() {
     //variables
 
-    var region = document.getElementsByClassName("region")[0];
-    var choiceRegion = document.getElementsByClassName("popupRegion")[0];
-    var buttonClothes = document.getElementsByClassName("buttonClothes")[0];
-    var choiceClothes = document.getElementsByClassName("clothes")[0];
-    var buttonBoots = document.getElementsByClassName("buttonBoots")[0];
-    var choiceBoots = document.getElementsByClassName("boots")[0];
-    var buttonAccessories = document.getElementsByClassName("buttonAccessories")[0];
-    var choiceAccessories = document.getElementsByClassName("accessories")[0];
-    var imgIcon = document.getElementsByClassName("imgIcon")[0];
-    var fastFindLocation = document.getElementsByClassName("fastFindLocation")[0];
-    var iconMenu = document.getElementsByClassName("iconMenu")[0];
-    var pointLocation = document.getElementsByClassName("pointLocation")[0];
-    var exit = document.getElementsByClassName("exit")[0];
-    var exitPopup = document.getElementsByClassName("exitPopup")[0];
-
-
+    var region = $(".region");
+    var choiceRegion = $(".popupRegion");
+    var buttonClothes = $(".buttonClothes");
+    var choiceClothes = $(".clothes");
+    var buttonBoots = $(".buttonBoots");
+    var choiceBoots = $(".boots");
+    var buttonAccessories = $(".buttonAccessories");
+    var choiceAccessories = $(".accessories");
+    var imgIcon = $(".imgIcon");
+    var fastFindLocation = $(".fastFindLocation");
+    var iconMenu = $(".iconMenu");
+    var pointLocation = $(".pointLocation");
+    var exit = $(".exit");
+    var exitPopup = $(".exitPopup");
 
     setPopup(region, choiceRegion);
     setPopup(buttonClothes, choiceClothes);
@@ -28,30 +26,15 @@ function ready() {
     setPopup(iconMenu, pointLocation);
     setPopup(exit, exitPopup);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
 function setPopup(target, popup) {
-    target.addEventListener("mouseover", function (event) {
-        popup.style.display = "flex";
-        //document.addEventListener("mouseover", closeWindows);
+    target.on("mouseover", function (event) {
+        popup[0].style.display = "flex";
     });
 
-    target.addEventListener("mouseleave", function (event) {
-        popup.style.display = "none";
-        //document.addEventListener("mouseover", closeWindows);
+    target.on("mouseleave", function (event) {
+        popup[0].style.display = "none";
     });
 }
