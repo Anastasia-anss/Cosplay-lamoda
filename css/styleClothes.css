@@ -1,0 +1,274 @@
+.clothesPage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    margin-top: 30px;
+}
+
+.hierarchy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.hierarchy a {
+    font-family: a_AvanteTitlerCpsUpC;
+    font-size: 13px;
+    color: #696969;
+}
+
+.filtrationClothes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    margin-top: 30px;
+}
+
+.filtr {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 250px;
+    height: 550px;
+    font-family: a_AvanteTitlerCpsUpC;
+}
+
+.filtr a {
+    font-size: 13px;
+    color: #696969;
+}
+
+.pointSort {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.attributesSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 730px;
+}
+
+.sort {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+
+.sortImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 34px;
+    width: 900px;
+    height: 1800px;
+}
+
+.choiceClothes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.otherClothes {
+    width: 215px;
+    height: 324px;
+}
+
+h3 {
+    font-family: a_AvanteTitlerCpsUpC;
+    font-size: 17px;
+}
+
+/* sectons sort*/
+
+.buttonSection,
+.buttonSection1,
+.buttonSection2 {
+    border: 2px solid #D9DADA;
+    border-radius: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.buttonSection {
+    font-family: a_AvanteTitlerCpsUpC;
+    font-size: 14px;
+}
+
+/* popup sectons sort*/
+/*Popularity*/
+
+.onPopularity {
+    display: flex;
+    display: none;
+    background-color: #D9DADA;
+    position: fixed;
+    top: 340px;
+    left: 375px;
+    width: 180px;
+    height: 180px;
+}
+
+.Popul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 160px;
+    height: 125px;
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+/*materials*/
+.materials {
+    display: flex;
+    background-color: #D9DADA;
+     display: none;
+    z-index: 160;
+    position: fixed;
+    top: 340px;
+    left: 532px;
+    width: 220px;
+    height: 220px;
+}
+
+.materi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 185px;
+    height: 150px;
+    overflow-x: auto;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+/*Colour*/
+.Colour {
+    display: flex;
+    background-color: #D9DADA;
+     display: none;
+    z-index: 160;
+    position: fixed;
+    top: 340px;
+    left: 642px;
+    width: 220px;
+    height: 220px;
+
+}
+.Col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 185px;
+    height: 150px;
+    overflow-x: auto;
+
+    margin-top: 20px;
+
+}
+
+.size {
+    display: none;
+}
+/*brand*/
+.brand {
+    display: flex;
+    background-color: #D9DADA;
+ display: none;
+    z-index: 160;
+    position: fixed;
+    top: 340px;
+    left: 802px;
+    width: 220px;
+    height: 220px;
+  
+}
+.bra{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 185px;
+    height: 150px;
+    overflow-x: auto;
+
+    margin-top: 20px;
+}
+.price {
+    display: none;
+}
+/*style*/
+.style {
+    display: flex;
+    display: none;
+    background-color: #D9DADA;
+    position: fixed;
+    top: 340px;
+    left: 960px;
+    width: 180px;
+    height: 180px; 
+ 
+}
+.sty{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 160px;
+    height: 125px;
+
+    margin-top: 20px;
+}
+/*pattern*/
+.pattern {
+    display: flex;
+    background-color: #D9DADA;
+display: none;
+    z-index: 160;
+    position: fixed;
+    top: 340px;
+    left: 1043px;
+    width: 220px;
+    height: 220px;
+  
+}
+.pat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 185px;
+    height: 150px;
+    overflow-x: auto;
+
+    margin-top: 20px;
+}
+
+/**/
+
+.arrow {
+    width: 8px;
+    height: 8px;
+    margin-left: 4px;
+}
+
+.blockImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sortImg p {
+    font-family: a_AvanteTitlerCpsUpC;
+    font-size: 13px;
+}
