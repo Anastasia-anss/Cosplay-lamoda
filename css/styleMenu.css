@@ -53,7 +53,7 @@ a {
     margin-right: 80px;
 }
 
-.imgIcon {
+.deliveryFast {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -61,7 +61,7 @@ a {
     height: 28px;
 }
 
-.imgIcon:hover {
+.deliveryFast:hover {
     display: flex;
     background-color: #A79ECD;
 }
@@ -79,7 +79,7 @@ a {
     height: 28px;
 }
 
-.imgMenuIcon {
+.fittingDelivery {
     display: flex;
     align-items: center;
     height: 16px;
@@ -236,6 +236,8 @@ a {
     height: 137px;
     border-radius: 15px;
 }
+
+
 .popupRegion:before {
     content: ;
     position: fixed;
@@ -315,9 +317,9 @@ input:hover {
     font-size: 12px;
 }
 
-/* popup доставка */
+/* popup delivery */
 
-.fastFindLocation {
+.fastDelivery {
     display: flex;
     background-color: white;
     box-shadow: 0 0 5px black;
@@ -332,7 +334,7 @@ input:hover {
     border-radius: 0 0 15px 15px;
 }
 
-.pointLocation {
+.destination {
     display: flex;
     background-color: white;
     box-shadow: 0 0 5px black;
@@ -470,7 +472,7 @@ input:hover {
     justify-content: center;
     width: 220px;
 }
-
+/* img */
 .popupImg {
     height: 170px;
     margin-right: 20px;
@@ -543,13 +545,13 @@ input:hover {
     width: 390px;
 }
 
-.r {
+.sale {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 14px;
 }
 
-.t {
+.sign {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 12px;

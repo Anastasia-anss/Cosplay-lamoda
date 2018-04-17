@@ -1,3 +1,5 @@
+/* main page*/
+
 .clothesPage {
     display: flex;
     justify-content: center;
@@ -7,7 +9,7 @@
     width: 1200px;
     margin-top: 30px;
 }
-
+/* hierarchy*/
 .hierarchy {
     display: flex;
     flex-direction: row;
@@ -20,7 +22,7 @@
     font-size: 13px;
     color: #696969;
 }
-
+/* left filtr*/
 .filtrationClothes {
     display: flex;
     flex-direction: row;
@@ -43,6 +45,12 @@
     color: #696969;
 }
 
+/* filtration clothes*/
+.sort {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
 .pointSort {
     display: flex;
     flex-direction: column;
@@ -53,7 +61,7 @@
     flex-direction: column;
     width: 500px;
 }
-
+/* all filtrs*/
 .attributesSection {
     display: flex;
     flex-direction: row;
@@ -61,46 +69,19 @@
     width: 730px;
 }
 
-.sort {
-    display: flex;
-    flex-direction: column;
-    width: 900px;
-}
-
-.sortImg {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 34px;
-    width: 900px;
-    height: 1800px;
-}
-
-.choiceClothes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.otherClothes {
-    width: 215px;
-    height: 324px;
-}
-
-h3 {
-    font-family: a_AvanteTitlerCpsUpC;
-    font-size: 17px;
-}
-
-/* sectons sort*/
-
-.buttonSection,
-.buttonSection1,
-.buttonSection2 {
+.buttonSection-1,
+.buttonSection-2,
+.buttonSection-3,
+.buttonSection-4,
+.buttonSection-5,
+.buttonSection-6 .buttonSection-7,
+.buttonSection-8 {
     border: 2px solid #D9DADA;
     border-radius: 5px;
     padding-left: 6px;
     padding-right: 6px;
+    font-family: a_AvanteTitlerCpsUpC;
+    font-size: 14px;
 }
 
 .buttonSection {
@@ -108,7 +89,9 @@ h3 {
     font-size: 14px;
 }
 
+
 /* popup sectons sort*/
+
 /*Popularity*/
 
 .onPopularity {
@@ -122,7 +105,7 @@ h3 {
     height: 180px;
 }
 
-.Popul {
+.Popularity {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -130,13 +113,14 @@ h3 {
     height: 125px;
     margin-top: 20px;
     margin-left: 15px;
-
 }
+
 /*materials*/
+
 .materials {
     display: flex;
     background-color: #D9DADA;
-     display: none;
+    display: none;
     z-index: 160;
     position: fixed;
     top: 340px;
@@ -145,7 +129,7 @@ h3 {
     height: 220px;
 }
 
-.materi {
+.allMaterials {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -155,61 +139,69 @@ h3 {
     margin-left: 15px;
     margin-top: 20px;
 }
+
 /*Colour*/
-.Colour {
+
+.colour {
     display: flex;
     background-color: #D9DADA;
-     display: none;
+    display: none;
     z-index: 160;
     position: fixed;
     top: 340px;
     left: 642px;
     width: 220px;
     height: 220px;
-
 }
-.Col{
+
+.allColour {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 185px;
     height: 150px;
     overflow-x: auto;
-
+    margin-left: 15px;
     margin-top: 20px;
-
 }
+
+/*size*/
 
 .size {
     display: none;
 }
+
 /*brand*/
+
 .brand {
     display: flex;
     background-color: #D9DADA;
- display: none;
+    display: none;
     z-index: 160;
     position: fixed;
     top: 340px;
     left: 802px;
     width: 220px;
     height: 220px;
-  
 }
-.bra{
+
+.allBrands {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 185px;
     height: 150px;
     overflow-x: auto;
-
+    margin-left: 15px;
     margin-top: 20px;
 }
+/* price */
 .price {
     display: none;
 }
+
 /*style*/
+
 .style {
     display: flex;
     display: none;
@@ -218,43 +210,46 @@ h3 {
     top: 340px;
     left: 960px;
     width: 180px;
-    height: 180px; 
- 
+    height: 180px;
 }
-.sty{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 160px;
-    height: 125px;
 
-    margin-top: 20px;
-}
-/*pattern*/
-.pattern {
-    display: flex;
-    background-color: #D9DADA;
-display: none;
-    z-index: 160;
-    position: fixed;
-    top: 340px;
-    left: 1043px;
-    width: 220px;
-    height: 220px;
-  
-}
-.pat{
+.allStyles {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 185px;
     height: 150px;
     overflow-x: auto;
-
+    margin-left: 15px;
     margin-top: 20px;
 }
 
-/**/
+/*pattern*/
+
+.pattern {
+    display: flex;
+    background-color: #D9DADA;
+    display: none;
+    z-index: 160;
+    position: fixed;
+    top: 340px;
+    left: 1043px;
+    width: 220px;
+    height: 220px;
+}
+
+.allPattern {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 185px;
+    height: 150px;
+    overflow-x: auto;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+/* button icon for "filtration"*/
 
 .arrow {
     width: 8px;
@@ -262,6 +257,22 @@ display: none;
     margin-left: 4px;
 }
 
+
+
+/* img for choice of clothes*/
+.sortImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 34px;
+    width: 900px;
+    height: 1800px;
+}
+.choiceClothes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .blockImg {
     display: flex;
     flex-direction: column;
@@ -271,4 +282,14 @@ display: none;
 .sortImg p {
     font-family: a_AvanteTitlerCpsUpC;
     font-size: 13px;
+}
+/* img for "choice of clothes" */
+.otherClothes {
+    width: 215px;
+    height: 324px;
+}
+/* others */
+h3 {
+    font-family: a_AvanteTitlerCpsUpC;
+    font-size: 17px;
 }

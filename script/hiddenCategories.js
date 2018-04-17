@@ -1,61 +1,69 @@
 $(document).ready(ready);
 
 function ready() {
-    //variables
 
+    //region
     var region = $(".region");
     var choiceRegion = $(".popupRegion");
+    // menu delivery
+    var deliveryFast = $(".deliveryFast");
+    var fastDelivery = $(".fastDelivery");
+    var iconMenu = $(".iconMenu");
+    var destination = $(".destination");
+    // exit
+    var exit = $(".exit");
+    var exitPopup = $(".exitPopup");
+    //categories menu
     var buttonClothes = $(".buttonClothes");
     var choiceClothes = $(".clothes");
     var buttonBoots = $(".buttonBoots");
     var choiceBoots = $(".boots");
     var buttonAccessories = $(".buttonAccessories");
     var choiceAccessories = $(".accessories");
-    var imgIcon = $(".imgIcon");
-    var fastFindLocation = $(".fastFindLocation");
-    var iconMenu = $(".iconMenu");
-    var pointLocation = $(".pointLocation");
-    var exit = $(".exit");
-    var exitPopup = $(".exitPopup");
-    // сделать на клик 
-    var ion = $(".buttonSection1");
-    var ionPopup = $(".onPopularity");
 
-    var io = $(".buttonSection2");
-    var ionPopu = $(".materials");
 
-    /* var io = $(".buttonSection3");
-    var ionPopu = $(".Colour");
 
-    var io = $(".buttonSection4");
-    var ionPopu = $(".size");
-
-    var io = $(".buttonSection5");
-    var ionPopu = $(".brand");
-
-    var io = $(".buttonSection6");
-   var ionPopu = $(".price");
-
-    var io = $(".buttonSection7");
-    var ionPopu = $(".style");
-
-    var io = $(".buttonSection8");
-    var ionPopu = $(".pattern");*/
+    // filters
+    var SectionOne = $(".buttonSection-1");
+    var popup1 = $(".onPopularity");
+    var SectionTwo = $(".buttonSection-2");
+    var popup2 = $(".materials");
+    var SectionThree = $(".buttonSection-3");
+    var popup3 = $(".colour");
+    var SectionFour = $(".buttonSection-4");
+    var popup4 = $(".size");
+    var SectionFive = $(".buttonSection-5");
+    var popup5 = $(".brand");
+    var SectionSix = $(".buttonSection-6");
+    var popup6 = $(".price");
+    var SectionSeven = $(".buttonSection7");
+    var popup7 = $(".style");
+    var SectionEight = $(".buttonSection-8");
+    var popup8 = $(".pattern");
 
 
 
 
-
+    //region
     setPopup(region, choiceRegion);
+    // menu delivery
+    setPopup(deliveryFast, fastDelivery);
+    setPopup(iconMenu, destination);
+    // exit
+    setPopup(exit, exitPopup);
+    //categories menu
     setPopup(buttonClothes, choiceClothes);
     setPopup(buttonBoots, choiceBoots);
     setPopup(buttonAccessories, choiceAccessories);
-    setPopup(imgIcon, fastFindLocation);
-    setPopup(iconMenu, pointLocation);
-    setPopup(exit, exitPopup);
-
-    setClickedPopup(ion, ionPopup);
-    setClickedPopup(io, ionPopu);
+    // filters
+    setClickedPopup(SectionOne, popup1);
+    setClickedPopup(SectionTwo, popup2);
+    setClickedPopup(SectionThree, popup3);
+    setClickedPopup(SectionFour, popup4);
+    setClickedPopup(SectionFive, popup5);
+    setClickedPopup(SectionSix, popup6);
+    setClickedPopup(SectionSeven, popup7);
+    setClickedPopup(SectionEight, popup8);
 
 
 
