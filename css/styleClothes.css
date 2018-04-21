@@ -9,7 +9,9 @@
     width: 1200px;
     margin-top: 30px;
 }
+
 /* hierarchy*/
+
 .hierarchy {
     display: flex;
     flex-direction: row;
@@ -22,7 +24,9 @@
     font-size: 13px;
     color: #696969;
 }
+
 /* left filtr*/
+
 .filtrationClothes {
     display: flex;
     flex-direction: row;
@@ -46,11 +50,13 @@
 }
 
 /* filtration clothes*/
+
 .sort {
     display: flex;
     flex-direction: column;
     width: 900px;
 }
+
 .pointSort {
     display: flex;
     flex-direction: column;
@@ -61,7 +67,9 @@
     flex-direction: column;
     width: 500px;
 }
+
 /* all filtrs*/
+
 .attributesSection {
     display: flex;
     flex-direction: row;
@@ -74,7 +82,8 @@
 .buttonSection-3,
 .buttonSection-4,
 .buttonSection-5,
-.buttonSection-6 .buttonSection-7,
+.buttonSection-6,
+.buttonSection-7,
 .buttonSection-8 {
     border: 2px solid #D9DADA;
     border-radius: 5px;
@@ -89,7 +98,6 @@
     font-size: 14px;
 }
 
-
 /* popup sectons sort*/
 
 /*Popularity*/
@@ -98,7 +106,7 @@
     display: flex;
     display: none;
     background-color: #D9DADA;
-    position: fixed;
+    position: absolute;
     top: 340px;
     left: 375px;
     width: 180px;
@@ -119,10 +127,12 @@
 
 .materials {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: #D9DADA;
     display: none;
     z-index: 160;
-    position: fixed;
+    position: absolute;
     top: 340px;
     left: 532px;
     width: 220px;
@@ -144,10 +154,12 @@
 
 .colour {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: #D9DADA;
     display: none;
     z-index: 160;
-    position: fixed;
+    position: absolute;
     top: 340px;
     left: 642px;
     width: 220px;
@@ -168,17 +180,39 @@
 /*size*/
 
 .size {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #D9DADA;
     display: none;
+    z-index: 160;
+    position: absolute;
+    top: 340px;
+    left: 715px;
+    width: 220px;
+    height: 220px;
+}
+.allSize {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 185px;
+    height: 150px;
+    overflow-x: auto;
+    margin-left: 15px;
+    margin-top: 20px;
 }
 
 /*brand*/
 
 .brand {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: #D9DADA;
     display: none;
     z-index: 160;
-    position: fixed;
+    position: absolute;
     top: 340px;
     left: 802px;
     width: 220px;
@@ -195,18 +229,61 @@
     margin-left: 15px;
     margin-top: 20px;
 }
+
 /* price */
+
 .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #D9DADA;
     display: none;
+    width: 260px;
+    height: 110px;
+    z-index: 160;
+    position: absolute;
+    top: 340px;
+    left: 883px;
+}
+
+.changePrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 260px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.enterPrice {
+    width: 50px;
+    height: 19px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid #8d8d8d;
+}
+
+
+.changePriceFrom,
+.changePriceTo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 120px;
 }
 
 /*style*/
 
 .style {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     display: none;
     background-color: #D9DADA;
-    position: fixed;
+    position: absolute;
     top: 340px;
     left: 960px;
     width: 180px;
@@ -228,10 +305,12 @@
 
 .pattern {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: #D9DADA;
     display: none;
     z-index: 160;
-    position: fixed;
+    position: absolute;
     top: 340px;
     left: 1043px;
     width: 220px;
@@ -249,6 +328,55 @@
     margin-top: 20px;
 }
 
+/*apply*/
+
+.applyPosition {
+    display: flex;
+    flex-direction: row;
+    width: 185px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.apply {
+    background-color: #A79ECD;
+    border-radius: 5px;
+    box-shadow: none;
+    width: 90px;
+    height: 22px;
+    border: none;
+    cursor: pointer;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-family: a_AvanteTitlerCpsUpC;
+    font-size: 14px;
+    margin-left: 75px;
+}
+
+/* apply for price */
+
+.applyPositionPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 260px;
+    height: 30px;
+}
+
+.applyPrice {
+    background-color: #A79ECD;
+    border-radius: 5px;
+    box-shadow: none;
+    width: 90px;
+    height: 22px;
+    border: none;
+    cursor: pointer;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-family: a_AvanteTitlerCpsUpC;
+    font-size: 14px;
+}
+
 /* button icon for "filtration"*/
 
 .arrow {
@@ -257,9 +385,8 @@
     margin-left: 4px;
 }
 
-
-
 /* img for choice of clothes*/
+
 .sortImg {
     display: flex;
     flex-direction: column;
@@ -268,11 +395,13 @@
     width: 900px;
     height: 1800px;
 }
+
 .choiceClothes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .blockImg {
     display: flex;
     flex-direction: column;
@@ -283,13 +412,77 @@
     font-family: a_AvanteTitlerCpsUpC;
     font-size: 13px;
 }
+
 /* img for "choice of clothes" */
+
 .otherClothes {
     width: 215px;
     height: 324px;
 }
+
 /* others */
+
 h3 {
     font-family: a_AvanteTitlerCpsUpC;
     font-size: 17px;
 }
+
+/* checkbox*/
+
+/*.gtr{
+    display: block;
+    line-height: 24px;
+    padding: 12px 15px;
+    cursor: pointer;
+    float:left;
+}
+.gtr + .gtr {
+    border-top: 1px solid #f0f2f3;
+  }
+.checkbox{
+    display: none;
+}
+.checkbox-custom{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 12px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid red;
+    border-radius: 12px;
+}
+.checkbox-custom:before {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -5px 0 0 -6px;
+    height: 4px;
+    width: 8px;
+    border: solid #39ca74;
+    border-width: 0 0 4px 4px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+.checkbox:checked ~ .mrt {
+    border-color: #39ca74;
+  }
+  
+.checkbox:checked ~ .mrt:before {
+    display: block;
+  }
+
+.label{
+    font-weight: bold;
+    color: #39A9E1;
+}
+.checkbox:checked ~ .lst {
+    color: #34bf6e;
+  }*/
+
+/* changeimg on mouseover*/

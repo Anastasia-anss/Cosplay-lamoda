@@ -36,7 +36,7 @@ function ready() {
     var popup5 = $(".brand");
     var SectionSix = $(".buttonSection-6");
     var popup6 = $(".price");
-    var SectionSeven = $(".buttonSection7");
+    var SectionSeven = $(".buttonSection-7");
     var popup7 = $(".style");
     var SectionEight = $(".buttonSection-8");
     var popup8 = $(".pattern");
